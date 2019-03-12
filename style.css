@@ -16,6 +16,7 @@ body {
 
 li {
   list-style: none;
+  margin-right: 50px;
 }
 
 a {
@@ -88,14 +89,13 @@ img {
 
 
 
- li {
- 	margin-right: 50px;
- }
+
 
 #paintings {
   /*margin: auto;*/
   margin-top: 60px;
-
+  /*display: flex;
+  flex-direction: row;*/
   /*width:  40%;*/
   /*align-items: center;*/
 }
@@ -130,7 +130,7 @@ img:hover {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  /*display: flex;      
+ /* display: flex;      
   flex-wrap: wrap;
   justify-content: center; */
 }
@@ -140,19 +140,28 @@ img:hover {
 
 // footer
 
-footer {
-  margin-top: 30px;
+.footer {
+  /*margin-top: 300px;
+  margin-left: 300px;*/
   background-color: #ddd;
   padding: 20px;
-  
-  ul {
-    display: flex;
-    justify-content: flex-end;
-    
-    li {
+}
+
+    #footer-ul {
+      display: inline-flex;
+      justify-content: flex-end;
+
+      }
+
+    #footer-li {
       padding: 0 10px;
+      list-style: none;
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-between;
+      /*margin-left: 200px;*/
     }
-  }
+  
   
   span {
     margin-top: 5px;
